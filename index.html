@@ -1,201 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kavya Reddy Manchireddy - Senior .NET Full Stack Developer with 8+ years of experience in enterprise applications, cloud technologies, and modern web development.">
-    <meta name="keywords" content="Senior .NET Developer, Full Stack Developer, ASP.NET Core, Angular, React, Azure, AWS, Microservices, C#">
-    <meta name="author" content="Kavya Reddy Manchireddy">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kavya Reddy Manchireddy - Senior .NET Full Stack Developer with 8+ years of experience in enterprise applications, cloud technologies, and modern web development."
+    />
+    <meta
+      name="keywords"
+      content="Senior .NET Developer, Full Stack Developer, ASP.NET Core, Angular, React, Azure, AWS, Microservices, C#, Enterprise Applications"
+    />
+    <meta name="author" content="Kavya Reddy Manchireddy" />
+
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Kavya Reddy Manchireddy - Senior .NET Full Stack Developer">
-    <meta property="og:description" content="8+ years of experience in enterprise applications, cloud technologies, and modern web development">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kavyamanchireddy.dev">
-    
+    <meta
+      property="og:title"
+      content="Kavya Reddy Manchireddy - Senior .NET Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="8+ years of experience in enterprise applications, cloud technologies, and modern web development"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kavyamanchireddy.dev" />
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-    
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>"
+    />
+
     <title>Kavya Reddy Manchireddy | Senior .NET Full Stack Developer</title>
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="global.css">
-    
-    <!-- Component Styles -->
-    <link rel="stylesheet" href="components/header/header.css">
-    <link rel="stylesheet" href="components/hero/hero.css">
-    <link rel="stylesheet" href="components/about/about.css">
-    <link rel="stylesheet" href="components/skills/skills.css">
-    <link rel="stylesheet" href="components/experience/experience.css">
-    <link rel="stylesheet" href="components/projects/projects.css">
-    <link rel="stylesheet" href="components/contact/contact.css">
-    <link rel="stylesheet" href="components/footer/footer.css">
-</head>
-<body>
-    <!-- Page Loader -->
-    <div class="page-loader" id="pageLoader">
-        <div class="loader-content">
-            <div class="loader-logo">
-                <span class="logo-text">KM</span>
-                <div class="loader-ring"></div>
-            </div>
-            <div class="loader-text">
-                <span class="loading-word">Loading</span>
-                <span class="loading-dots">
-                    <span>.</span>
-                    <span>.</span>
-                    <span>.</span>
-                </span>
-            </div>
-            <div class="loader-progress">
-                <div class="progress-bar"></div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">KM</span>
+            <span class="logo-text">Kavya Manchireddy</span>
+          </a>
         </div>
-    </div>
 
-    <!-- Cursor Follower -->
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
 
-    <!-- Custom Cursor -->
-    <div class="custom-cursor">
-        <div class="cursor-inner"></div>
-        <div class="cursor-outer"></div>
-    </div>
-
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-progress">
-        <div class="progress-line"></div>
-    </div>
-
-    <!-- Header Component -->
-    <div id="header-component"></div>
+        <div class="nav-actions">
+          <a
+            href="assets/documents/Kavya_Manchireddy_Resume.pdf"
+            class="btn btn-outline"
+            download
+          >
+            <i class="fas fa-download"></i>
+            Resume
+          </a>
+          <!-- Update the navigation toggle button -->
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
     <!-- Main Content -->
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section id="hero-component" class="hero-section"></section>
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                Hi, I'm
+                <span class="text-primary">Kavya Reddy Manchireddy</span>
+              </h1>
+              <h2 class="hero-subtitle">
+                <span class="typing-text" id="typing-text"
+                  >Senior .NET Full Stack Developer</span
+                >
+                <span class="cursor">|</span>
+              </h2>
+              <p class="hero-description">
+                Passionate about building
+                <strong>scalable enterprise applications</strong> with
+                <span class="highlight">8+ years of experience</span> in modern
+                technologies. Specialized in <strong>.NET Core</strong>,
+                <strong>Angular</strong>, <strong>React</strong>, and
+                <strong>cloud architectures</strong> for Insurance, Banking, and
+                Healthcare domains.
+              </p>
 
-        <!-- About Section -->
-        <section id="about-component" class="about-section"></section>
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-number">8+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">3</span>
+                  <span class="stat-label">Industry Domains</span>
+                </div>
+              </div>
 
-        <!-- Skills Section -->
-        <section id="skills-component" class="skills-section"></section>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                  <i class="fas fa-rocket"></i>
+                  View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <i class="fas fa-handshake"></i>
+                  Let's Connect
+                </a>
+              </div>
+            </div>
 
-        <!-- Experience Section -->
-        <section id="experience-component" class="experience-section"></section>
+            <div class="hero-image">
+              <div class="profile-card">
+                <div class="profile-avatar">
+                  <img
+                    src="assets/images/profile.jpg"
+                    alt="Kavya Reddy Manchireddy"
+                    class="avatar-img"
+                  />
+                  <div class="avatar-status"></div>
+                </div>
+                <div class="profile-info">
+                  <h3>Available for Hire</h3>
+                  <p>New York, NY</p>
+                  <div class="tech-badges">
+                    <span class="tech-badge">.NET Core</span>
+                    <span class="tech-badge">Angular</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Azure</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Projects Section -->
-        <section id="projects-component" class="projects-section"></section>
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+              Get to know more about my background and expertise
+            </p>
+          </div>
 
-        <!-- Contact Section -->
-        <section id="contact-component" class="contact-section"></section>
+          <div class="about-content">
+            <div class="about-text">
+              <h3>Senior .NET Full Stack Developer</h3>
+              <p>
+                With over <strong>8 years of experience</strong> in the IT
+                industry, I specialize in designing, developing, testing,
+                deploying, and maintaining enterprise applications using
+                cutting-edge .NET technologies. My expertise spans across
+                <strong>Insurance, Banking, and Healthcare</strong> domains,
+                where I've successfully delivered scalable solutions that drive
+                business growth.
+              </p>
+
+              <p>
+                I'm passionate about
+                <strong>modern software architecture</strong>, including
+                microservices, cloud-native applications, and full-stack
+                development. My approach combines technical excellence with
+                business acumen to deliver solutions that not only meet
+                requirements but exceed expectations.
+              </p>
+
+              <div class="expertise-areas">
+                <div class="expertise-item">
+                  <i class="fas fa-code"></i>
+                  <div>
+                    <h4>Full Stack Development</h4>
+                    <p>
+                      End-to-end application development using .NET Core,
+                      Angular, React, and modern web technologies
+                    </p>
+                  </div>
+                </div>
+
+                <div class="expertise-item">
+                  <i class="fas fa-cloud"></i>
+                  <div>
+                    <h4>Cloud Architecture</h4>
+                    <p>
+                      Designing and implementing scalable cloud solutions on
+                      Azure and AWS platforms
+                    </p>
+                  </div>
+                </div>
+
+                <div class="expertise-item">
+                  <i class="fas fa-cube"></i>
+                  <div>
+                    <h4>Microservices</h4>
+                    <p>
+                      Building distributed systems with containerization using
+                      Docker and Kubernetes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-image">
+              <div class="experience-highlight">
+                <div class="highlight-item">
+                  <span class="highlight-number">8+</span>
+                  <span class="highlight-text">Years of Experience</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">15+</span>
+                  <span class="highlight-text">Technologies Mastered</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-number">3</span>
+                  <span class="highlight-text">Industry Domains</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+          </div>
+
+          <div class="skills-content">
+            <div class="skill-category">
+              <h3>Backend Development</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-microsoft"></i>
+                  <span>.NET Core</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-hashtag"></i>
+                  <span>C#</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-server"></i>
+                  <span>ASP.NET Core</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>Entity Framework</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Frontend Development</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-angular"></i>
+                  <span>Angular</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-js"></i>
+                  <span>TypeScript</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5/CSS3</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Cloud & DevOps</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-microsoft"></i>
+                  <span>Azure</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-aws"></i>
+                  <span>AWS</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-docker"></i>
+                  <span>Docker</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-dharmachakra"></i>
+                  <span>Kubernetes</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="75"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Databases</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQL Server</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-leaf"></i>
+                  <span>MongoDB</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-elephant"></i>
+                  <span>PostgreSQL</span>
+                  <div class="skill-level">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">
+              My career journey and key achievements
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Senior .NET Developer</h3>
+                  <div class="company-info">
+                    <span class="company">QBE Insurance</span>
+                    <span class="location">New York, NY</span>
+                    <span class="duration">Feb 2024 - Present</span>
+                  </div>
+                </div>
+                <div class="timeline-description">
+                  <p>
+                    Leading development of enterprise insurance applications
+                    using modern .NET technologies and cloud-native
+                    architectures.
+                  </p>
+                  <ul class="achievements">
+                    <li>
+                      Implemented MVC architecture design patterns improving
+                      maintainability
+                    </li>
+                    <li>
+                      Developed responsive applications using Angular 16 and
+                      TypeScript
+                    </li>
+                    <li>
+                      Optimized application performance with multithreading and
+                      advanced collections
+                    </li>
+                    <li>
+                      Integrated MongoDB for scalable NoSQL data storage
+                      solutions
+                    </li>
+                  </ul>
+                  <div class="tech-stack">
+                    <span class="tech">ASP.NET Core</span>
+                    <span class="tech">Angular 16</span>
+                    <span class="tech">MongoDB</span>
+                    <span class="tech">Azure</span>
+                    <span class="tech">Docker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Senior .NET Full Stack Developer</h3>
+                  <div class="company-info">
+                    <span class="company">Cardinal Health</span>
+                    <span class="location">Dublin, OH</span>
+                    <span class="duration">Dec 2022 - Jan 2024</span>
+                  </div>
+                </div>
+                <div class="timeline-description">
+                  <p>
+                    Led design and development of scalable healthcare
+                    applications using .NET 9, ASP.NET Core, Blazor, and
+                    React.js.
+                  </p>
+                  <ul class="achievements">
+                    <li>
+                      Developed microservices using gRPC, RESTful APIs, and
+                      RabbitMQ
+                    </li>
+                    <li>
+                      Implemented HIPAA, HL7, and FHIR compliance for healthcare
+                      systems
+                    </li>
+                    <li>
+                      Applied CQRS with MediatR for improved scalability and
+                      maintainability
+                    </li>
+                    <li>
+                      Led data migration from legacy systems to modern
+                      microservices platforms
+                    </li>
+                  </ul>
+                  <div class="tech-stack">
+                    <span class="tech">.NET 9</span>
+                    <span class="tech">Blazor</span>
+                    <span class="tech">React.js</span>
+                    <span class="tech">gRPC</span>
+                    <span class="tech">Kubernetes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>.NET Full Stack Developer</h3>
+                  <div class="company-info">
+                    <span class="company">State of Oregon</span>
+                    <span class="location">Salem, OR</span>
+                    <span class="duration">Dec 2020 - Nov 2022</span>
+                  </div>
+                </div>
+                <div class="timeline-description">
+                  <p>
+                    Developed government applications using Agile methodologies
+                    and modern web technologies.
+                  </p>
+                  <ul class="achievements">
+                    <li>
+                      Created dynamic user interfaces using React.js and
+                      responsive design
+                    </li>
+                    <li>
+                      Implemented gRPC streaming for real-time data processing
+                    </li>
+                    <li>
+                      Utilized AWS services for optimized cloud-based solutions
+                    </li>
+                    <li>
+                      Enhanced application security using JWT and OAuth 2.0
+                    </li>
+                  </ul>
+                  <div class="tech-stack">
+                    <span class="tech">React.js</span>
+                    <span class="tech">ASP.NET Core</span>
+                    <span class="tech">AWS</span>
+                    <span class="tech">Docker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>.NET Software Engineer</h3>
+                  <div class="company-info">
+                    <span class="company">i2k2 Networks</span>
+                    <span class="location">Noida, India</span>
+                    <span class="duration">Apr 2018 - Sep 2019</span>
+                  </div>
+                </div>
+                <div class="timeline-description">
+                  <p>
+                    Developed web applications using ASP.NET MVC and modern
+                    frontend technologies.
+                  </p>
+                  <ul class="achievements">
+                    <li>
+                      Built scalable backend services using ASP.NET Core Web API
+                    </li>
+                    <li>
+                      Designed responsive interfaces using Angular 10+ and
+                      TypeScript
+                    </li>
+                    <li>
+                      Integrated with AWS cloud services for database solutions
+                    </li>
+                  </ul>
+                  <div class="tech-stack">
+                    <span class="tech">ASP.NET MVC</span>
+                    <span class="tech">Angular</span>
+                    <span class="tech">AWS</span>
+                    <span class="tech">SQL Server</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+              Some of my notable work and contributions
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-1.jpg"
+                  alt="Insurance Management System"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#" class="project-link">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="#" class="project-link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Enterprise Insurance Platform</h3>
+                <p>
+                  Comprehensive insurance management system built with .NET Core
+                  and Angular, handling policy management, claims processing,
+                  and customer portals.
+                </p>
+                <div class="project-tech">
+                  <span class="tech">.NET Core</span>
+                  <span class="tech">Angular 16</span>
+                  <span class="tech">Azure</span>
+                  <span class="tech">SQL Server</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-2.jpg"
+                  alt="Healthcare Management System"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#" class="project-link">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="#" class="project-link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Healthcare Data Management</h3>
+                <p>
+                  HIPAA-compliant healthcare application with HL7 and FHIR
+                  integration, featuring real-time patient data processing and
+                  secure communication.
+                </p>
+                <div class="project-tech">
+                  <span class="tech">Blazor</span>
+                  <span class="tech">React.js</span>
+                  <span class="tech">gRPC</span>
+                  <span class="tech">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/project-3.jpg"
+                  alt="Government Portal"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#" class="project-link">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="#" class="project-link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Government Services Portal</h3>
+                <p>
+                  Citizen services platform built with React.js and ASP.NET
+                  Core, deployed on AWS with microservices architecture for
+                  scalability.
+                </p>
+                <div class="project-tech">
+                  <span class="tech">React.js</span>
+                  <span class="tech">ASP.NET Core</span>
+                  <span class="tech">AWS</span>
+                  <span class="tech">Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+              Let's discuss your next project or opportunity
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <a href="mailto:manchireddykavyareddy2312@gmail.com"
+                    >manchireddykavyareddy2312@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Phone</h3>
+                  <a href="tel:+12026565649">+1 (202) 656-5649</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>LinkedIn</h3>
+                  <a
+                    href="https://www.linkedin.com/in/kavyamanchireddy/"
+                    target="_blank"
+                    >linkedin.com/in/kavyamanchireddy</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Location</h3>
+                  <span>New York, NY</span>
+                </div>
+              </div>
+
+              <div class="availability-badge">
+                <div class="status-indicator"></div>
+                <span>Available for new opportunities</span>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer Component -->
-    <div id="footer-component"></div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2024 Kavya Reddy Manchireddy. All rights reserved.</p>
+            <p>Built with passion and modern web technologies</p>
+          </div>
+
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/kavyamanchireddy/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="mailto:manchireddykavyareddy2312@gmail.com"
+              class="social-link"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+12026565649" class="social-link">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-        <span class="btn-text">Top</span>
+    <button class="back-to-top" id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
     </button>
 
     <!-- Theme Toggle -->
-    <div class="theme-switcher">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <i class="fas fa-sun sun-icon"></i>
-            <i class="fas fa-moon moon-icon"></i>
-        </button>
-    </div>
+    <button class="theme-toggle" id="theme-toggle">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </button>
 
-    <!-- Side Navigation Dots -->
-    <nav class="side-nav" id="sideNav">
-        <ul class="nav-dots">
-            <li><a href="#hero-component" data-tooltip="Home" class="nav-dot active"></a></li>
-            <li><a href="#about-component" data-tooltip="About" class="nav-dot"></a></li>
-            <li><a href="#skills-component" data-tooltip="Skills" class="nav-dot"></a></li>
-            <li><a href="#experience-component" data-tooltip="Experience" class="nav-dot"></a></li>
-            <li><a href="#projects-component" data-tooltip="Projects" class="nav-dot"></a></li>
-            <li><a href="#contact-component" data-tooltip="Contact" class="nav-dot"></a></li>
-        </ul>
-    </nav>
-
-    <!-- Background Elements -->
-    <div class="bg-elements">
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-        </div>
-        
-        <!-- Particles Background -->
-        <div class="particles-bg" id="particles-bg"></div>
-        
-        <!-- Grid Background -->
-        <div class="grid-bg"></div>
-    </div>
-
-    <!-- Success/Error Notification -->
-    <div class="notification" id="notification">
-        <div class="notification-content">
-            <i class="notification-icon"></i>
-            <span class="notification-text"></span>
-            <button class="notification-close" onclick="closeNotification()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
-    <!-- JavaScript Libraries -->
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- GSAP Animation Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    <!-- Three.js for 3D Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
-    <!-- Typed.js for Typing Animation -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
-    <!-- Main JavaScript -->
-    <script src="main.js"></script>
-    
-    <!-- Component Scripts -->
-    <script src="components/header/header.js"></script>
-    <script src="components/hero/hero.js"></script>
-    <script src="components/about/about.js"></script>
-    <script src="components/skills/skills.js"></script>
-    <script src="components/experience/experience.js"></script>
-    <script src="components/projects/projects.js"></script>
-    <script src="components/contact/contact.js"></script>
-    <script src="components/footer/footer.js"></script>
-
-    <!-- Analytics (Optional) -->
-    <!-- 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    -->
-</body>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
