@@ -860,8 +860,8 @@ function copyToClipboard(text) {
 function downloadResume() {
   // Create a temporary link element
   const link = document.createElement("a");
-  link.href = "assets/documents/Kavya_Manchireddy_Resume.pdf";
-  link.download = "Kavya_Manchireddy_Senior_NET_Developer.pdf";
+  link.href = "assets/documents/Kavya_Resume.docx";
+  link.download = "Kavya_Manchireddy_Senior_NET_Developer.docx";
 
   // Append to body, click, and remove
   document.body.appendChild(link);
@@ -873,7 +873,7 @@ function downloadResume() {
   // Track download event
   if (typeof gtag !== "undefined") {
     gtag("event", "resume_download", {
-      file_name: "Kavya_Manchireddy_Resume.pdf",
+      file_name: "Kavya_Resume.docx",
       timestamp: new Date().toISOString(),
     });
   }
